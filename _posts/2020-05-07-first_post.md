@@ -2,8 +2,6 @@
 title:  "블로그 시작!"
 excerpt: "github.io 블로그를 시작한다."
 
-tags:
-  - 시작
 categories:
   - etc.
 ---
