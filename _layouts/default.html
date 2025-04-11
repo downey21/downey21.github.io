@@ -29,9 +29,14 @@
   <script>
     const toggleButton = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.menu');
+    const sidebar = document.querySelector('.sidebar');
 
     toggleButton.addEventListener('click', () => {
       menu.classList.toggle('show');
+
+      if (window.innerWidth <= 720) {
+        sidebar.classList.toggle('collapsed');
+      }
     });
   </script>
 
