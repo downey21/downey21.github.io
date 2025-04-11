@@ -10,8 +10,11 @@
 <body>
   <div class="sidebar">
     <h2>{{ site.title }}</h2>
+
+    <button class="menu-toggle">☰</button>
+
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="{{ "/" | relative_url }}">Home</a></li>
         <li><a href="{{ "/software/" | relative_url }}">Software</a></li>
         <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
@@ -22,5 +25,15 @@
   <div class="content">
     {{ content }}
   </div>
+
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggleButton.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
 </body>
 </html>

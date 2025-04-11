@@ -20,6 +20,14 @@ body {
 .sidebar ul {
   list-style: none;
   padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-ease-in-out;
+}
+
+.sidebar ul.show {
+  max-height: 500px;
+  overflow: visible;
 }
 
 .sidebar ul li {
@@ -36,7 +44,7 @@ body {
 .sidebar ul li a:hover {
   color: #292d78;
   text-decoration: none;
-  text-shadow: #292d78 0px 0px 2px;
+  text-shadow: #292d78 0px 0px 1px;
 }
 
 .content {
@@ -55,7 +63,16 @@ body {
 .content a:hover {
   color: #0067a5;
   text-decoration: none;
-  text-shadow: #0067a5 0px 0px 2px;
+  text-shadow: #0067a5 0px 0px 1px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #292d78;
 }
 
 @media screen and (max-width: 960px) {
@@ -70,15 +87,16 @@ body {
 }
 
 @media screen and (max-width: 720px) {
-  body {
-    flex-direction: column;
+  .menu-toggle {
+    display: block;
+    margin-bottom: 10px;
   }
 
-  .sidebar {
-    width: 100%;
+  .sidebar ul {
+    max-height: 0;
   }
 
-  .content {
-    width: 100%;
+  .sidebar ul.show {
+    max-height: 500px;
   }
 }
