@@ -38,6 +38,14 @@
         sidebar.classList.toggle('collapsed');
       }
     });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720) {
+        menu.classList.remove('show');
+        sidebar.classList.remove('collapsed');
+      }
+    });
+
   </script>
 
 </body>

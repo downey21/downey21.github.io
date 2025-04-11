@@ -91,6 +91,10 @@ body {
     transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
   }
 
+  .sidebar.collapsed h2 {
+    display: none;
+  }
+
   .menu-toggle {
     display: block;
     margin-bottom: 10px;
