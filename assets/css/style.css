@@ -57,3 +57,28 @@ body {
   text-decoration: none;
   text-shadow: #0067a5 0px 0px 2px;
 }
+
+@media screen and (max-width: 960px) {
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
