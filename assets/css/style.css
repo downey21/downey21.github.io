@@ -22,7 +22,7 @@ body {
   padding: 0;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .sidebar ul.show {
@@ -44,7 +44,7 @@ body {
 .sidebar ul li a:hover {
   color: #292d78;
   text-decoration: none;
-  text-shadow: #292d78 0px 0px 1px;
+  text-shadow: #292d78 0px 0px 0.5px;
 }
 
 .content {
@@ -63,7 +63,7 @@ body {
 .content a:hover {
   color: #0067a5;
   text-decoration: none;
-  text-shadow: #0067a5 0px 0px 1px;
+  text-shadow: #0067a5 0px 0px 0.5px;
 }
 
 .menu-toggle {
