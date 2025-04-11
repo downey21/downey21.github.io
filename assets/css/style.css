@@ -30,16 +30,30 @@ body {
   text-decoration: none;
   color: #0067a5;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .sidebar ul li a:hover {
   color: #292d78;
   text-decoration: none;
+  text-shadow: #292d78 0px 0px 2px;
 }
 
 .content {
   flex-grow: 1;
   background-color: #ffffff;
   padding: 30px;
+}
+
+.content a {
+  text-decoration: none;
+  color: #39c;
+  font-weight: normal;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.content a:hover {
+  color: #0067a5;
+  text-decoration: none;
+  text-shadow: #0067a5 0px 0px 2px;
 }
