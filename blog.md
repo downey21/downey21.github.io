@@ -4,6 +4,6 @@ title: Blog
 permalink: /blog/
 ---
 
-# Blog
+### Blog
 
 This is the Blog page.
