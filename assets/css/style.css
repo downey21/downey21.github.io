@@ -13,6 +13,7 @@ body {
 }
 
 .sidebar h2 {
+  color: #292d78;
   margin-top: 0;
 }
 
@@ -27,13 +28,13 @@ body {
 
 .sidebar ul li a {
   text-decoration: none;
-  color: #292d78;
+  color: #0067a5;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-  color: #1e224d;
+  color: #292d78;
   text-decoration: none;
 }
 
