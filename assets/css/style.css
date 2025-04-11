@@ -6,7 +6,7 @@ body {
 }
 
 .sidebar {
-  width: 180px;
+  width: 150px;
   background-color: #e8edf3;
   padding: 20px;
   box-sizing: border-box;
@@ -111,8 +111,6 @@ body {
   }
 
   .sidebar ul {
-    /* max-height: 0;
-    overflow: hidden; */
     transition: max-height 0.5s ease-in-out;
   }
 }
