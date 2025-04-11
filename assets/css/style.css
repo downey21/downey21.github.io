@@ -95,14 +95,24 @@ body {
     display: none;
   }
 
+  .sidebar.collapsed ul {
+    display: none;
+  }
+
+  .sidebar:not(.collapsed) ul {
+    display: block;
+    max-height: 500px;
+    overflow: visible;
+  }
+
   .menu-toggle {
     display: block;
     margin-bottom: 10px;
   }
 
   .sidebar ul {
-    max-height: 0;
-    overflow: hidden;
+    /* max-height: 0;
+    overflow: hidden; */
     transition: max-height 0.5s ease-in-out;
   }
 }
